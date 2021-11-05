@@ -1,0 +1,55 @@
+@import '../mixins.scss';
+
+.dashboard {
+  display: block;
+  min-height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  align-items: center;
+
+  .dashboard-block1 {
+    padding: 5rem 5rem 0 5rem;
+    text-align: center;
+  }
+
+  .dashboard-block2 {
+    //height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    margin: 0;
+
+    .dashboard-illustrator-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .dashboard-block3 {
+    // kb-character-wrapper bg
+    .kb-character-wrapper {
+      position: relative;
+      height: 12.5rem;
+      padding-top: 1.438rem;
+
+      .v-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .dashboard-block4 {
+    padding: 3rem 0 3rem 0;
+  }
+
+  .dashboard-block6 {
+    padding: 3rem 0 3rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  // dashboard-block2 in sm screen
+  //.dashboard-block2 {
+  //    display: none;
+  //}
+}
